@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+html {
+	scroll-behavior: smooth;
+}
+.main {
+    background-color: #dbafaf;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#phan1{
+  position: relative;
+  top:50%;
+
+}
+.titleDone{
+    color: #d13939;
+    font-size:32px;
+    padding-top:15px;
+    margin-bottom: 20px;
+}
+
+.textWelcome{
+    color: #d13939;
+    font-size:50px;
+    padding-top:15px;
+    margin-bottom: 20px
+}
+
+/* CSS */
+.startBtn {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.startBtn:hover,
+.startBtn:focus {
+  background-color: #F082AC;
+}
+
+
+/* CSS */
+
+  .title{
+    color: #d13939;
+    font-size:30px;
+    padding-top:15px;
+    margin-bottom: 20px;
+
+  }
+
+  .content {
+    margin-top:60px;
+    margin-left:400px;
+    margin-right:400px;
+    text-align: left;
+    padding-bottom:60px;
+  }
+
+  .dongyBtn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .titleTotinh {
+    color: #d13939;
+    font-size:30px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .content {
+      margin-top:300px;
+      margin-left:20px;
+      margin-right:20px;
+      text-align: left;
+      padding-bottom:50px;
+    }
+  }

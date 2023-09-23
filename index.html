@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>My Darin </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+    // Bind all a href clicks to this function
+    $('#startBtn').on('click', 'a', function(event){
+
+        // Prevent default events
+        event.preventDefault();
+
+        // Animate the body (html page) to scroll to the referring element 
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1000);
+
+    });
+
+</script>
+<body>
+    <audio id="audio" loop>
+        <source src="ido.mp3" type="audio/ogg">
+        <source src="ido.mp3" type="audio/mpeg">
+      </audio>
+    <div class="main">
+        <div id="phan1">
+            <button onclick="batdau()" id="startBtn" class="startBtn">Click vô đây đi</button>
+        </div>
+        <div id="phan2" hidden>
+
+        
+        <div id="firstPage" class="firstPage">
+            <div class="textWelcome">Chào em, cờ rút của anh.</div>
+            <img class="emyeu" src="emyeu.jpg" alt="yourImage" height="400">
+            <div class="title">Đây là bức thư mà anh muốn gửi đến em, đọc nó nhaaaaa</div>
+            <a href="#content" id="startBtn" class="startBtn">Okiiii</a>
+        </div>
+        <div class="content" id="content">
+            à ừm.. hôm nay là ngày thứ mấy ta.. anh không biết lúc nào mới có thể gửi nó cho em nữa,
+            nhưng anh biết ngày em đọc được bức thư này là một ngày thật đẹp, ngày mà cảm xúc anh không thể kìm nén được nữa. 
+          <br/> <br/> Em biết không, cuộc sống của riêng bản thân chúng ta có 2 ngày rất quan trọng, đó là ngày chúng ta được sinh ra và ngày chúng ta biết mình là ai. 
+           <br/> Kể từ ngày anh biết mình là ai, cuộc sống của anh trở nên thật tốt đẹp, anh có thể làm mọi thứ trong hạnh phúc,
+            cuộc sống của anh dường như là một màu hồng tinh khiết, nhưng anh biết, anh sẽ phải lủi thủi một mình, 1 thời gian dài đã trôi qua 
+            nhưng anh vẫn không có được một cảm giác thân thương, cảm giác người đó đến và dành cho anh cả, 
+            anh vẫn cố gắng mỗi ngày, ngày qua ngày anh đều tốt hơn, anh luôn tự nhủ rằng, anh phải thật tuyệt vời 
+            để đến khi gặp người đó, mình có thể dành những điều tốt đẹp cho người ta, anh đang xây dựng khu vườn của mình, 
+            chờ ngày cô công chúa đến đây, đến để đặt tên cho khu vườn của riêng 2 người.
+            <br/> Và cuối cùng, cuối cùng... anh cùng tìm thấy một điều tuyệt vời, một tia sáng rực rỡ, một mảnh ghép mang tên Trương Thị Trúc Mai.
+            một người mà khiến anh phải cười mỗi ngày, nụ cười của sự hạnh phúc là: aaaaaaa... tìm thấy người ta ròiiiiii
+            <br/> Một món quà đặc biệt, món quà mà anh muốn phải đi tìm chìa khóa để mở nó ngayyyy. <br/>
+            Em à, con tim anh đã đập rất nhanh rồi, nó tìm cách để hòa chung nhịp đập cùng với em, nó bảo anh: hãy nói đi, điều tuyệt vời sẽ đến với chú Tộpp.  
+            <br/> <br/> Trong giấc mơ của anh, đã hiện lên về ngôi nhà của chúng ta, có những thứ em thích, có những thứ anh yêu, 
+            không chỉ là 2 ngày quan trọng của bản thân nữa mà chúng ta sẽ cùng nhau làm nên những ngày đặc biệt, ngày quan trọng của "2 người".
+            <br/> Mảnh ghép cuối cùng của anh chính là em, Trương Thị Trúc Mai ^^, anh không hứa anh sẽ làm hay sẽ mang cho em những gì, nhưng điều anh làm, điều anh mang đến cho em 
+            chắc chắn là điều tuyệt vời nhất mà anh có, hãy để anh bên cạnh em, đồng hành cùng em chặn đường còn lại được chứ, Pokemon hãy về với anh. 
+        </div>
+        
+    </div>
+
+</body>
+</html>
